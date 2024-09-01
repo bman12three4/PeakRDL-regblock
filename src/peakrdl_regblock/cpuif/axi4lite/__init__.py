@@ -45,7 +45,7 @@ class AXI4Lite_Cpuif_flattened(AXI4Lite_Cpuif):
             "output logic " + self.signal("wready"),
             "input wire " + self.signal("wvalid"),
             f"input wire [{self.data_width-1}:0] " + self.signal("wdata"),
-            f"input wire [{self.data_width_bytes-1}:0]" + self.signal("wstrb"),
+            f"input wire [{self.data_width_bytes-1}:0] " + self.signal("wstrb"),
 
             "input wire " + self.signal("bready"),
             "output logic " + self.signal("bvalid"),
